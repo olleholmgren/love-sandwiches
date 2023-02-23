@@ -14,7 +14,6 @@ SHEET = GSPREAD_CLIENT.open('love_sandwiches')
 
 sales = SHEET.worksheet('sales')
 
-
 data = sales.get_all_values()
 
 print(data)
