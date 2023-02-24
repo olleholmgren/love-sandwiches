@@ -80,6 +80,12 @@ def calculate_surplus_data(sales_row):
     return surplus_data
 
 
+"""
+Här är vi nu
+"""
+def update_surplus_worksheet:
+
+
 def main():
     """
     Run all program functions
