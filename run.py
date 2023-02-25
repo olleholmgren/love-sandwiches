@@ -49,17 +49,6 @@ def validate_data(values):
     
     return True
 
-
-def update_sales_worksheet(data):
-    """
-    Update sales worksheet, add new row with the list data provided.
-    """
-    print('updating sales...\n')
-    sales_worksheet = SHEET.worksheet('sales')
-    sales_worksheet.append_row(data)
-    print('sales worksheet updated succesfully.\n')
-
-
 def calculate_surplus_data(sales_row):
     """
     Compare Sales with stock and calculate the surplus for each item type
@@ -81,15 +70,6 @@ def calculate_surplus_data(sales_row):
 
 
 
-def update_surplus_worksheet(data):
-    """
-    Update surplus worksheet
-    """
-    print('updating surplus data...\n...\n...\n...')
-    surplus_worksheet = SHEET.worksheet('surplus')
-    surplus_worksheet.append_row(data)
-    print('updated surplus worksheet successfully')
-
 
 
 def update_worksheet(data, worksheet):
@@ -101,13 +81,6 @@ def update_worksheet(data, worksheet):
     worksheet_to_update = SHEET.worksheet(worksheet)
     worksheet_to_update.append_row(data)
     print(f'{worksheet} updated successfully...\n')
-
-
-
-
-
-
-
 
 def main():
     """
@@ -125,3 +98,29 @@ def main():
 print('\nHEllo and welcome you to this automation')
 
 main()
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+def update_sales_worksheet(data):
+    print('updating sales...\n')
+    sales_worksheet = SHEET.worksheet('sales')
+    sales_worksheet.append_row(data)
+    print('sales worksheet updated succesfully.\n')
+
+
+def update_surplus_worksheet(data):
+    print('updating surplus data...\n...\n...\n...')
+    surplus_worksheet = SHEET.worksheet('surplus')
+    surplus_worksheet.append_row(data)
+    print('updated surplus worksheet successfully')
+"""
